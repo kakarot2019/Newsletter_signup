@@ -7,7 +7,8 @@ const https = require("https");
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public")); //used to make a "public" folder to make a referance to css and images files
+//used to make a "public" folder to make a referance to css and images files
+app.use(express.static("public")); 
 
 /*we atre using process.env.PORT or 3000 to let heroku decide and assign any random PORT number to us 
     or else choose 3000 by default*/
